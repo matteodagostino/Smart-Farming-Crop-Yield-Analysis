@@ -60,6 +60,8 @@ The data was split **70/30** into training and test sets. Hyperparameters were s
 
 ### Model Results
 
+The original project results were:
+
 - **Best max depth:** 10
 - **Best minimum samples per leaf:** 6
 - **Test MSE:** ~0.228
@@ -69,7 +71,7 @@ The data was split **70/30** into training and test sets. Hyperparameters were s
 
 I defined **low fertilizer usage** as observations at or below the dataset's 25th percentile for fertilizer usage and used the trained model to estimate yield for that subset.
 
-The analysis produced:
+The original analysis produced:
 
 - Overall estimated average yield: approximately **727,390**
 - Low-fertilizer estimated average yield: approximately **686,813**
@@ -91,6 +93,19 @@ The analysis highlighted several notable differences:
 
 Within the project's simulated yield framework, stronger water availability, rainfall, photosynthesis potential, and crop density were associated with higher predicted performance when fertilizer usage was low.
 
+## Reproducible Analysis
+
+The `src/analysis.py` file is a cleaned portfolio version of my original Jupyter analysis. It preserves the analytical logic while removing classroom-only notebook clutter and avoiding accidental variable reuse from the original working notebook.
+
+To run it:
+
+```bash
+pip install -r requirements.txt
+python src/analysis.py
+```
+
+See `data/README.md` for dataset setup instructions.
+
 ## Tools & Methods
 
 **Python · Pandas · NumPy · Matplotlib · Scikit-learn · Decision Trees · GridSearchCV · Feature Engineering · EDA · Regression**
@@ -100,16 +115,22 @@ Within the project's simulated yield framework, stronger water availability, rai
 ```
 Smart-Farming-Crop-Yield-Analysis/
 ├── README.md
-├── notebooks/
-│   └── smart-farming-crop-yield-analysis.ipynb
-└── reports/
-    └── final-project-report.pdf
+├── requirements.txt
+├── .gitignore
+├── data/
+│   └── README.md
+└── src/
+    └── analysis.py
 ```
 
 ## Team Project Context
 
-This repository highlights **my individual analytical contribution** within a larger academic team project. Other team members investigated separate research questions using methods including Random Forest regression, Lasso regression, and additional sustainability analyses.
+This repository highlights **my individual analytical contribution** within a larger academic team project. Other team members investigated separate research questions using methods including Random Forest, Lasso regression, and water-efficiency modeling.
+
+The full team report is available in my coursework repository:
+
+https://github.com/matteodagostino/Big-Data-Analytics-Methods/blob/main/reports/final-report.pdf
 
 ## Key Takeaway
 
-The project taught me how to move from an imperfect real-world-style dataset to a structured analytical question: explore the data, engineer meaningful features, build and evaluate a model, and then translate the model output into a practical decision-oriented finding.
+This project taught me how to move from an imperfect real-world-style dataset to a structured analytical question: explore the data, engineer meaningful features, build and evaluate a model, and then translate the model output into a practical decision-oriented finding.
