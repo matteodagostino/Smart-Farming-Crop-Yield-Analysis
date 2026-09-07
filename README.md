@@ -80,6 +80,8 @@ The original analysis produced:
 
 Within this simulated framework, the low-fertilizer subset retained much of the estimated yield of the overall sample.
 
+![Crop yield comparison](assets/crop-yield-comparison.svg)
+
 ## What Conditions Were Associated With Better Performance Under Low Fertilizer?
 
 I split the low-fertilizer observations into higher- and lower-performing groups and compared their average environmental/model features.
@@ -92,6 +94,8 @@ The analysis highlighted several notable differences:
 - **Crop density:** 13.49 vs. 10.95
 
 Within the project's simulated yield framework, stronger water availability, rainfall, photosynthesis potential, and crop density were associated with higher predicted performance when fertilizer usage was low.
+
+![Low-fertilizer conditions comparison](assets/low-fertilizer-conditions.svg)
 
 ## Reproducible Analysis
 
@@ -117,6 +121,9 @@ Smart-Farming-Crop-Yield-Analysis/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── assets/
+│   ├── crop-yield-comparison.svg
+│   └── low-fertilizer-conditions.svg
 ├── data/
 │   └── README.md
 └── src/
