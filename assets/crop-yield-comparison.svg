@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect width="1100" height="650" fill="#faf8f1"/>
+<text x="550" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#3b241f">Can Crops Maintain Performance With Less Fertilizer?</text>
+<text x="550" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#5f5a54">Predicted crop yield comparison in the simulated-yield framework</text>
+<line x1="165" y1="515" x2="965" y2="515" stroke="#777" stroke-width="2"/>
+<line x1="165" y1="160" x2="165" y2="515" stroke="#777" stroke-width="2"/>
+<g font-family="Arial, sans-serif" font-size="16" fill="#595959">
+<text x="145" y="520" text-anchor="end">0</text><text x="145" y="432" text-anchor="end">200k</text><text x="145" y="344" text-anchor="end">400k</text><text x="145" y="256" text-anchor="end">600k</text><text x="145" y="168" text-anchor="end">800k</text>
+</g>
+<g stroke="#ddd" stroke-width="1"><line x1="165" y1="427" x2="965" y2="427"/><line x1="165" y1="339" x2="965" y2="339"/><line x1="165" y1="251" x2="965" y2="251"/><line x1="165" y1="163" x2="965" y2="163"/></g>
+<rect x="290" y="195" width="220" height="320" rx="5" fill="#557a46"/>
+<rect x="625" y="213" width="220" height="302" rx="5" fill="#8ba55f"/>
+<g font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#2f2f2f"><text x="400" y="182" text-anchor="middle">727,390</text><text x="735" y="200" text-anchor="middle">686,813</text></g>
+<g font-family="Arial, sans-serif" font-size="20" fill="#333"><text x="400" y="555" text-anchor="middle">Overall Avg Yield</text><text x="735" y="555" text-anchor="middle">Low-Fertilizer Avg Yield</text></g>
+<rect x="266" y="585" width="568" height="46" rx="23" fill="#efe7d3"/>
+<text x="550" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#5b2a23">Low-fertilizer subset retained ~94.4% of overall estimated yield (≈5.6% reduction)</text>
+</svg>
