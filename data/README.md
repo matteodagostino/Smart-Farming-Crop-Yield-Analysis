@@ -10,7 +10,7 @@ Place the source CSV at:
 data/Crop_recommendationV2.csv
 ```
 
-before running `src/analysis.py`.
+before running `src/STA4724FinalProject2 (5).ipynb`.
 
 Dataset reference from the academic report:
 https://www.kaggle.com/datasets/datasetengineer/smart-farming-data-2024-sf24/data
