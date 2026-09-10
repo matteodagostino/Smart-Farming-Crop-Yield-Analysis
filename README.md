@@ -16,12 +16,13 @@ I was responsible for:
 
 - Conducting the exploratory data analysis (EDA) of the dataset
 - Writing the project introduction and framing the sustainability problem
-- Engineering derived agricultural variables to make the dataset more analytically useful
-- Creating a simulated crop-yield target from available agronomic variables
+- Researching how to construct meaningful derived agricultural variables from the available data
+- Engineering multiple features to make the dataset more analytically useful
+- Creating a simulated crop-yield target because crop yield was not directly provided in the source dataset
 - Log-transforming the crop-yield estimate to reduce skewness
-- Building and tuning a Decision Tree Regressor
+- Building and tuning a **Decision Tree Regressor**
 - Analyzing predicted crop performance under low fertilizer usage
-- Comparing environmental conditions associated with high vs. low yield under reduced fertilizer
+- Comparing conditions associated with higher vs. lower performance under reduced fertilizer
 - Developing and presenting the fertilizer/yield findings shown in the project presentation
 
 ## Feature Engineering
@@ -77,8 +78,9 @@ The original analysis produced:
 - Low-fertilizer estimated average yield: approximately **686,813**
 - Difference: approximately **40,577**
 - Estimated reduction: approximately **5.6%**
+- Estimated yield retained under low fertilizer: approximately **94.4%**
 
-Within this simulated framework, the low-fertilizer subset retained much of the estimated yield of the overall sample.
+Within this simulated framework, the low-fertilizer subset retained most of the estimated yield of the overall sample.
 
 ![Crop yield comparison](assets/crop-yield-comparison.svg)
 
@@ -97,37 +99,41 @@ Within the project's simulated yield framework, stronger water availability, rai
 
 ![Low-fertilizer conditions comparison](assets/low-fertilizer-conditions.svg)
 
-## Reproducible Analysis
+## Project Files
 
-The `src/analysis.py` file is a cleaned portfolio version of my original Jupyter analysis. It preserves the analytical logic while removing classroom-only notebook clutter and avoiding accidental variable reuse from the original working notebook.
+### Python Analysis
 
-To run it:
+The original Jupyter Notebook contains the Python analysis used for the project, including exploratory analysis, feature engineering, crop-yield construction, decision-tree modeling, tuning, and investigation of the two research questions.
 
-```bash
-pip install -r requirements.txt
-python src/analysis.py
-```
+**[View the Jupyter Notebook](src/smart_farming_crop_yield_analysis.ipynb)**
 
-See `data/README.md` for dataset setup instructions.
+### Project Presentation
+
+The team presentation summarizes the broader project and includes the fertilizer/yield findings I developed and presented.
+
+**[View the Project Presentation](assets/smart_farming_project_presentation.pdf)**
+
+See `data/README.md` for dataset setup information.
 
 ## Tools & Methods
 
-**Python · Pandas · NumPy · Matplotlib · Scikit-learn · Decision Trees · GridSearchCV · Feature Engineering · EDA · Regression**
+**Python · Pandas · NumPy · Matplotlib · Scikit-learn · Decision Tree Regression · GridSearchCV · Feature Engineering · EDA · Regression**
 
 ## Repository Structure
 
-```
+```text
 Smart-Farming-Crop-Yield-Analysis/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
 ├── assets/
 │   ├── crop-yield-comparison.svg
-│   └── low-fertilizer-conditions.svg
+│   ├── low-fertilizer-conditions.svg
+│   └── smart_farming_project_presentation.pdf
 ├── data/
 │   └── README.md
 └── src/
-    └── analysis.py
+    └── smart_farming_crop_yield_analysis.ipynb
 ```
 
 ## Team Project Context
@@ -140,4 +146,4 @@ https://github.com/matteodagostino/Big-Data-Analytics-Methods/blob/main/reports/
 
 ## Key Takeaway
 
-This project taught me how to move from an imperfect real-world-style dataset to a structured analytical question: explore the data, engineer meaningful features, build and evaluate a model, and then translate the model output into a practical decision-oriented finding.
+This project taught me how to move from an imperfect real-world-style dataset to a structured analytical question: research the domain, engineer meaningful features, construct a usable target, build and evaluate a model, and translate the results into a practical decision-oriented finding.
